@@ -1,0 +1,13 @@
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  float: right;
+}
+.accordion.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+.panel {
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
